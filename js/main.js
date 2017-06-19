@@ -1,64 +1,100 @@
-$(window).load(function(){
-	$('#preloader').fadeOut('slow',function(){$(this).remove();});
-});
+
+function main() {
+
+(function () {
+   'use strict';
+   
+  	$('a.page-scroll').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top - 40
+            }, 900);
+            return false;
+          }
+        }
+      });
+
+	// affix the navbar after scroll below header
+$('#nav').affix({
+      offset: {
+        top: $('header').height()
+      }
+});	
+
+	// skills chart
+	$(document).ready(function(e) {
+	//var windowBottom = $(window).height();
+	var index=0;
+	$(document).scroll(function(){
+		var top = $('#skills').height()-$(window).scrollTop();
+		console.log(top)
+		if(top<-300){
+			if(index==0){	
+			
+				$('.chart').easyPieChart({
+					easing: 'easeOutBounce',
+					onStep: function(from, to, percent) {
+						$(this.el).find('.percent').text(Math.round(percent));
+					}
+				});
+			
+				}
+			index++;
+		}
+	})
+	//console.log(nagativeValue)
+	});
 
 
-/******************************************************************************************************************************
-Learn More Page Scroll
-*******************************************************************************************************************************/
-$(function() {
-    $('a.page-scroll').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
+  	// Portfolio isotope filter
+    $(window).load(function() {
+        var $container = $('.portfolio-items');
+        $container.isotope({
+            filter: '*',
+            animationOptions: {
+                duration: 750,
+                easing: 'linear',
+                queue: false
+            }
+        });
+        $('.cat a').click(function() {
+            $('.cat .active').removeClass('active');
+            $(this).addClass('active');
+            var selector = $(this).attr('data-filter');
+            $container.isotope({
+                filter: selector,
+                animationOptions: {
+                    duration: 750,
+                    easing: 'linear',
+                    queue: false
+                }
+            });
+            return false;
+        });
+
     });
-});
-
-/******************************************************************************************************************************
-Menu
-*******************************************************************************************************************************/ 
-(function() {
-
-	var bodyEl = document.body,
-		//content = document.querySelector( '.content-wrap' ),
-		openbtn = document.getElementById( 'open-button' ),
-		closebtn = document.getElementById( 'close-button' ),
-		isOpen = false;
-
-	function init() {
-		initEvents();
-	}
-
-	function initEvents() {
-		openbtn.addEventListener( 'click', toggleMenu );
-		if( closebtn ) {
-			closebtn.addEventListener( 'click', toggleMenu );
+	
+	  	
+    // CounterUp
+	$(document).ready(function( $ ) {
+		if($("span.count").length > 0){	
+			$('span.count').counterUp({
+					delay: 10, // the delay time in ms
+			time: 1500 // the speed time in ms
+			});
 		}
+	});
+	
+  	// Pretty Photo
+	$("a[rel^='prettyPhoto']").prettyPhoto({
+		social_tools: false
+	});	
 
-		/* close the menu element if the target it´s not the menu element or one of its descendants..
-		content.addEventListener( 'click', function(ev) {
-			var target = ev.target;
-			if( isOpen && target !== openbtn ) {
-				toggleMenu();
-			}
-		} );
-		*/
-	}
-
-	function toggleMenu() {
-		if( isOpen ) {
-			classie.remove( bodyEl, 'show-menu' );
-		}
-		else {
-			classie.add( bodyEl, 'show-menu' );
-		}
-		isOpen = !isOpen;
-	}
-
-	init();
-
-})();
+}());
 
 
+}
+main();
