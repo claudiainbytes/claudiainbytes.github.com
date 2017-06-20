@@ -55,7 +55,7 @@
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse"> <i class="fa fa-bars"></i> </button>
         <a class="navbar-brand page-scroll" href="#page-top">Claudia Estupinan Forero</a> </div>
-      
+
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
         <ul class="nav navbar-nav">
@@ -82,8 +82,11 @@
       <div class="col-md-12 text-center"><img src="img/about.jpg" class="img-responsive"></div>
       <div class="col-md-8 col-md-offset-2">
         <div class="about-text">
-          <p>"Since we cannot know all that there is to be known about anything, we ought to know a little about everything." <i>Blaise Pascal</i></p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare.</p>
+          <blockquote class="blockquote-reverse">
+            <p>Since we cannot know all that there is to be known about anything, we ought to know a little about everything.</p>
+            <footer><cite title="Source Title">Blaise Pascal</cite></footer>
+          </blockquote>
+          <!-- p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare.</p-->
           <p class="text-center"><a class="btn btn-primary" href="#"><i class="fa fa-download"></i> Download Resume</a></p>
         </div>
       </div>
@@ -98,23 +101,23 @@
       <hr>
     </div>
     <div class="row">
-      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="95"> <span class="percent">95</span> </span>
-        <h4>HTML5</h4>
-      </div>
-      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="85"> <span class="percent">85</span> </span>
-        <h4>CSS3</h4>
-      </div>
       <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="80"> <span class="percent">80</span> </span>
-        <h4>jQuery</h4>
-      </div>
-      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="80"> <span class="percent">80</span> </span>
-        <h4>WordPress</h4>
+        <h4>HTML & CSS</h4>
       </div>
       <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="70"> <span class="percent">70</span> </span>
-        <h4>Photoshop</h4>
+        <h4>Javascript</h4>
+      </div>
+      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="75"> <span class="percent">75</span> </span>
+        <h4>PHP</h4>
+      </div>
+      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="60"> <span class="percent">60</span> </span>
+        <h4>Drupal 7</h4>
       </div>
       <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="65"> <span class="percent">65</span> </span>
-        <h4>Illustrator</h4>
+        <h4>Laravel</h4>
+      </div>
+      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="25"> <span class="percent">25</span> </span>
+        <h4>Ruby</h4>
       </div>
     </div>
   </div>
@@ -131,9 +134,9 @@
         <li>
           <ol class="type">
             <li><a href="#" data-filter="*" class="active">All</a></li>
-            <li><a href="#" data-filter=".web">Web Design</a></li>
+            <!--li><a href="#" data-filter=".web">Web Design</a></li>
             <li><a href="#" data-filter=".app">App Development</a></li>
-            <li><a href="#" data-filter=".branding">Branding</a></li>
+            <li><a href="#" data-filter=".branding">Branding</a></li-->
           </ol>
         </li>
       </ul>
@@ -225,7 +228,7 @@
       <hr>
     </div>
     <div class="row">
-      <div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay="200ms">
+      <!---div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay="200ms">
         <div class="achievement-box"> <span class="count">310</span>
           <h4>Happy Clients</h4>
         </div>
@@ -239,9 +242,9 @@
         <div class="achievement-box"> <span class="count">30</span>
           <h4>Awards Won</h4>
         </div>
-      </div>
-      <div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay="800ms">
-        <div class="achievement-box"> <span class="count">8</span>
+      </div-->
+      <div class="col-md-12 col-sm-12 wow fadeInDown" data-wow-delay="800ms">
+        <div class="achievement-box"> <span class="count">7</span>
           <h4>Years of Experience</h4>
         </div>
       </div>
@@ -250,7 +253,7 @@
 </div>
 <!-- Resume Section -->
 <div id="resume" class="text-center">
-  <div class="container">
+  <div class="container" style="display:none;">
     <div class="section-title center">
       <h2>Experience</h2>
       <hr>
@@ -310,7 +313,7 @@
       </div>
     </div>
   </div>
-  <div class="container">
+  <div class="container" style="display:none;">
     <div class="section-title center">
       <h2>Education</h2>
       <hr>
@@ -318,9 +321,9 @@
     <div class="row">
       <div class="col-lg-12">
         <ul class="timeline">
-          
+
           <!-- Education Section-->
-          
+
           <li>
             <div class="timeline-image">
               <h4>2010 <br>
@@ -383,49 +386,28 @@
     </div>
     <div class="col-md-8 col-md-offset-2">
       <div class="col-md-4"> <i class="fa fa-map-marker fa-2x"></i>
-        <p>4321 California St,<br>
-          San Francisco, CA 12345</p>
+        <p>Bogotá<br>
+           Colombia</p>
       </div>
       <div class="col-md-4"> <i class="fa fa-envelope-o fa-2x"></i>
-        <p>info@company.com</p>
+        <p>claudiainbytes@gmail.com</p>
       </div>
-      <div class="col-md-4"> <i class="fa fa-phone fa-2x"></i>
-        <p> +1 123 456 1234</p>
+      <div class="col-md-4"> <i class="fa fa-skype fa-2x"></i>
+        <p>claudia.eforero</p>
+      </div>
+      <div class="col-md-4"> <i class="fa fa-twitter fa-2x"></i>
+        <p>@claudiainbytes</p>
       </div>
       <div class="clearfix"></div>
     </div>
     <div class="col-md-8 col-md-offset-2">
       <h3>Leave me a message</h3>
-      <form name="sentMessage" id="contactForm" novalidate>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="form-group">
-              <input type="text" id="name" class="form-control" placeholder="Name" required="required">
-              <p class="help-block text-danger"></p>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <input type="email" id="email" class="form-control" placeholder="Email" required="required">
-              <p class="help-block text-danger"></p>
-            </div>
-          </div>
-        </div>
-        <div class="form-group">
-          <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
-          <p class="help-block text-danger"></p>
-        </div>
-        <div id="success"></div>
-        <button type="submit" class="btn btn-default">Send Message</button>
-      </form>
       <div class="social">
         <ul>
-          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-          <li><a href="#"><i class="fa fa-github"></i></a></li>
-          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="https://twitter.com/claudiainbytes" target="_blank"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://github.com/claudiainbytes" target="_blank"><i class="fa fa-github"></i></a></li>
+          <li><a href="https://claudiainbytes.wordpress.com/" target="_blank"><i class="fa fa-wordpress"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/claudiaestupinanforero" target="_blank"><i class="fa fa-linkedin"></i></a></li>
         </ul>
       </div>
     </div>
@@ -434,20 +416,20 @@
 <div id="footer">
   <div class="container text-center">
     <div class="fnav">
-      <p>Copyright &copy; 2016 John Doe. Designed by <a href="http://www.templatewire.com" rel="nofollow">TemplateWire</a></p>
+      <p>Copyright &copy; 2017 ClaudiaInBytes. Claudia Estupinan Forero, Web Developer. </p>
     </div>
   </div>
 </div>
-<script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
-<script type="text/javascript" src="js/bootstrap.js"></script> 
-<script type="text/javascript" src="js/SmoothScroll.js"></script> 
-<script type="text/javascript" src="js/easypiechart.js"></script> 
-<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script> 
-<script type="text/javascript" src="js/jquery.isotope.js"></script> 
-<script type="text/javascript" src="js/jquery.counterup.js"></script> 
-<script type="text/javascript" src="js/waypoints.js"></script> 
-<script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
-<script type="text/javascript" src="js/contact_me.js"></script> 
+<script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/SmoothScroll.js"></script>
+<script type="text/javascript" src="js/easypiechart.js"></script>
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.js"></script>
+<script type="text/javascript" src="js/jquery.counterup.js"></script>
+<script type="text/javascript" src="js/waypoints.js"></script>
+<script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
+<script type="text/javascript" src="js/contact_me.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
