@@ -10,18 +10,21 @@
 
       app.directive('prettyp', function(){
             return function(scope, element, attrs){
-                  $("[rel^='prettyPhoto']").prettyPhoto({deeplinking: false, social_tools:false });
+                  $("[rel^='prettyPhoto']").prettyPhoto({
+                        deeplinking: false, 
+                        social_tools:false 
+                  });
             }
       })
       .directive('loadcharts', function(){
             return function(scope, element, attrs){
-                  $(document).ready(function(e) {
+                  $(window).load(function(e) {
                   //var windowBottom = $(window).height();
                   var index=0;
                   $(document).scroll(function(){
                         var top = $('#skills').height()-$(window).scrollTop();
                         //console.log(top)
-                        if(top<-300){
+                        if(top < -300){
                               if(index==0){     
                               
                                     $('.chart').easyPieChart({
