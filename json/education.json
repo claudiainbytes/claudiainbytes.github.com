@@ -1,0 +1,42 @@
+[
+  {
+    "school": "Udacity",
+    "course": "Front-End Web Developer",
+    "description": "Front-End Web Developer Nanodegree Program. AT&T Aspire to Tech Scholarship Program. Online program.",
+    "start": "JUN 2017",
+    "end": "NOW",
+    "class": ""
+  },
+  {
+    "school": "American School Way",
+    "course": "English Course",
+    "description": "Levels B2.1, B2.2, C1. American School Way. Bogotá, Colombia.",
+    "start": "ENE 2016",
+    "end": "JUL 2017",
+    "class": "timeline-inverted"
+  },
+  {
+    "school": "Universidad Santo Tomás",
+    "course": "Multimedia Management Specialization",
+    "description": "Planning and developing digital contents and applications from a business model. Bogotá, Colombia.",
+    "start": "JUN 2013",
+    "end": "MAR 2015",
+    "class": ""
+  },
+  {
+    "school": "Universidad Simón Bólivar",
+    "course": "Computer Systems Engineering",
+    "description": "Cúcuta, Colombia",
+    "start": "FEB 2000",
+    "end": "MAR 2006",
+    "class": "timeline-inverted"
+  },
+  {
+    "school": "Colegio Cardenal Sancha",
+    "course": "Secondary School",
+    "description": "Cúcuta, Colombia",
+    "start": "FEB 1994",
+    "end": "NOV 1999",
+    "class": ""
+  }
+]

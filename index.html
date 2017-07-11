@@ -33,7 +33,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" ng-app="app">
 
 <!-- Header -->
 <header id="header">
@@ -94,37 +94,24 @@
   </div>
 </div>
 <!-- Skills Section -->
-<div id="skills" class="text-center">
-  <div class="container">
+<div id="skills" class="text-center" loadcharts>
+  <div class="container" ng-controller="myskillsController">
     <div class="section-title center">
       <h2>Skills</h2>
       <hr>
     </div>
-    <div class="row">
-      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="80"> <span class="percent">80</span> </span>
-        <h4>HTML & CSS</h4>
-      </div>
-      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="70"> <span class="percent">70</span> </span>
-        <h4>Javascript</h4>
-      </div>
-      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="75"> <span class="percent">75</span> </span>
-        <h4>PHP</h4>
-      </div>
-      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="60"> <span class="percent">60</span> </span>
-        <h4>Drupal 7</h4>
-      </div>
-      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="65"> <span class="percent">65</span> </span>
-        <h4>Laravel</h4>
-      </div>
-      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="25"> <span class="percent">25</span> </span>
-        <h4>Ruby</h4>
+    <div class="row"> 
+      <div ng-repeat="sk in my_skills">
+        <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="{{sk.percentaje}}"> <span class="percent">{{sk.percentaje}}</span> </span>
+          <h4>{{sk.skill}}</h4>
+        </div>
       </div>
     </div>
   </div>
 </div>
 <!-- Portfolio Section -->
 <div id="portfolio">
-  <div class="container">
+  <div class="container" ng-controller="myprojectsController" loadportfolio>
     <div class="section-title text-center center">
       <h2>Portfolio</h2>
       <hr>
@@ -143,145 +130,22 @@
       <div class="clearfix"></div>
     </div>
     <div class="row">
-
-      <div class="portfolio-items" id="render-projects">
-        <script type="text/javascript">
-          (function portfolio(){
-            let portfolio = { "project" : [
-                              {
-                                "title" : "Campus Thao",
-                                "description" : "Campus Thao",
-                                "img_large": "01-img-large.jpg",
-                                "img_small": "01-img-small.jpg"
-                              },
-                              {
-                                "title" : "Sandwich Qbano",
-                                "description" : "Concurso Camila 2011",
-                                "img_large": "02-img-large.jpg",
-                                "img_small": "02-img-small.jpg"
-                              },
-                              {
-                                "title" : "RCN Chocolate Corona",
-                                "description" : "Concurso Buenos Momentos",
-                                "img_large": "03-img-large.jpg",
-                                "img_small": "03-img-small.jpg"
-                              },
-                              {
-                                "title" : "Daily Wells",
-                                "description" : "Daily Wells",
-                                "img_large": "04-img-large.jpg",
-                                "img_small": "04-img-small.jpg"
-                              },
-                              {
-                                "title" : "LatinMedios",
-                                "description" : "Feeder Dashboard",
-                                "img_large": "05-img-large.jpg",
-                                "img_small": "05-img-small.jpg"
-                              },
-                              {
-                                "title" : "Ensus",
-                                "description" : "Web Site",
-                                "img_large": "06-img-large.jpg",
-                                "img_small": "06-img-small.jpg"
-                              },
-                              {
-                                "title" : "LG Copa América 2011",
-                                "description" : "Concurso Fútbol Sala",
-                                "img_large": "07-img-large.jpg",
-                                "img_small": "07-img-small.jpg"
-                              },
-                              {
-                                "title" : "Nissan",
-                                "description" : "Gallery",
-                                "img_large": "08-img-large.jpg",
-                                "img_small": "08-img-small.jpg"
-                              },
-                              {
-                                "title" : "Racom",
-                                "description" : "Web Maintenance",
-                                "img_large": "09-img-large.jpg",
-                                "img_small": "09-img-small.jpg"
-                              },
-                              {
-                                "title" : "RCN, La Mega, La F.M.",
-                                "description" : "Web Maintenance",
-                                "img_large": "10-img-large.jpg",
-                                "img_small": "10-img-small.jpg"
-                              },
-                              {
-                                "title" : "Sandwich Qbano",
-                                "description" : "Concurso Música en Altamar",
-                                "img_large": "11-img-large.jpg",
-                                "img_small": "11-img-small.jpg"
-                              },
-                              {
-                                "title" : "Sweet Lemon",
-                                "description" : "Web Development",
-                                "img_large": "12-img-large.jpg",
-                                "img_small": "12-img-small.jpg"
-                              },
-                              {
-                                "title" : "Web de Cobbito",
-                                "description" : "Web Development",
-                                "img_large": "13-img-large.jpg",
-                                "img_small": "13-img-small.jpg"
-                              },
-                              {
-                                "title" : "Universidad Manuela Beltrán",
-                                "description" : "Web Development",
-                                "img_large": "14-img-large.jpg",
-                                "img_small": "14-img-small.jpg"
-                              },
-                              {
-                                "title" : "MINTIC Territorial Platforms",
-                                "description" : "Web Maintenance",
-                                "img_large": "15-img-large.jpg",
-                                "img_small": "15-img-small.jpg"
-                              },
-
-                            ]
-                           };
-
-                           var text = "";
-
-                         for( let i = 0; i < portfolio.project.length; i++ ){
-
-                           let title = portfolio.project[i].title;
-                           let description = portfolio.project[i].description;
-                           let img_large = portfolio.project[i].img_large;
-                           let img_small = portfolio.project[i].img_small;
-
-                           text +=
-                           `<div class="col-sm-6 col-md-3 col-lg-3 web">
-                            <div class="portfolio-item">
-                              <div class="hover-bg"> <a href="img/portfolio/${img_large}" title="${title}" rel="prettyPhoto">
-                                <div class="hover-text">
-                                  <h4>${title}</h4>
-                                  <small>${description}</small> </div>
-                                <img src="img/portfolio/${img_small}" class="img-responsive" alt="${title}"> </a> </div>
-                            </div>
-                          </div>`;
-
-                         }
-
-                         document.getElementById("render-projects").innerHTML = text;
-          })();
-        </script>
-
-        <!--div class="col-sm-6 col-md-3 col-lg-3 web">
+      <div class="portfolio-items" id="render-projects" ng-repeat="prj in my_projects">
+        <!--item-->
+        <div class="col-sm-6 col-md-3 col-lg-3 web">
           <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/01-img-large.jpg" title="Project description" rel="prettyPhoto">
+            <div prettyp class="hover-bg"> <a href="img/portfolio/{{prj.img_large}}" title="{{prj.title}}" rel="prettyPhoto">
               <div class="hover-text">
-                <h4>Project Title</h4>
-                <small>Web Design</small> </div>
-              <img src="img/portfolio/01-img-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                <h4>{{prj.title}}</h4>
+                <small>{{prj.description}}</small> </div>
+              <img src="img/portfolio/{{prj.img_small}}" class="img-responsive" alt="{{prj.title}}"> </a> </div>
           </div>
-        </div-->
-
-      </div>
-    </div>
-  </div>
-</div>
+        </div>
+        <!--item-->
+      </div><!--portfolio-item-->
+    </div><!--row-->  
+  </div><!--container-->
+</div><!--portafolio-->
 <!-- Achievements Section -->
 <div id="achievements" class="text-center">
   <div class="container">
@@ -315,59 +179,27 @@
 </div>
 <!-- Resume Section -->
 <div id="resume" class="text-center">
-  <div class="container">
+  <div class="container" ng-controller="myexperienceController">
     <div class="section-title center">
       <h2>Experience</h2>
       <hr>
     </div>
     <div class="row">
       <div class="col-lg-12">
-        <ul class="timeline">
-          <li>
+        <ul class="timeline" ng-repeat="exps in my_experiences">
+          <li class="{{exps.class}}">
             <div class="timeline-image">
-              <h4>Feb 2013 <br>
+              <h4>{{exps.start}}<br>
                 - <br>
-                Present </h4>
+                {{exps.end}}</h4>
             </div>
             <div class="timeline-panel">
               <div class="timeline-heading">
-                <h4>Creative Agency</h4>
-                <h4 class="subheading">UX Developer</h4>
+                <h4>{{exps.company}}</h4>
+                <h4 class="subheading">{{exps.position}}</h4>
               </div>
               <div class="timeline-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamcommodo nibh ante facilisis.</p>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-inverted">
-            <div class="timeline-image">
-              <h4>Nov 2011 <br>
-                - <br>
-                Jan 2013 </h4>
-            </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>Creative Agency</h4>
-                <h4 class="subheading">Front-end Developer</h4>
-              </div>
-              <div class="timeline-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamcommodo nibh ante facilisis.</p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="timeline-image">
-              <h4>Dec 2009 <br>
-                - <br>
-                May 2011 </h4>
-            </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>Creative Agency</h4>
-                <h4 class="subheading">UX Designer</h4>
-              </div>
-              <div class="timeline-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamcommodo nibh ante facilisis.</p>
+                <p>{{exps.description}}</p>
               </div>
             </div>
           </li>
@@ -375,62 +207,28 @@
       </div>
     </div>
   </div>
-  <div class="container">
+  <div class="container" ng-controller="myeducationController">
     <div class="section-title center">
       <h2>Education</h2>
       <hr>
     </div>
     <div class="row">
       <div class="col-lg-12">
-        <ul class="timeline">
-
+        <ul class="timeline" ng-repeat="edu in my_education">
           <!-- Education Section-->
-
-          <li>
+          <li class="{{edu.class}}">
             <div class="timeline-image">
-              <h4>2010 <br>
+              <h4>{{edu.start}}<br>
                 - <br>
-                2011 </h4>
+                {{edu.end}}</h4>
             </div>
             <div class="timeline-panel">
               <div class="timeline-heading">
-                <h4>Design University</h4>
-                <h4 class="subheading">Master Degree of Design</h4>
+                <h4>{{edu.school}}</h4>
+                <h4 class="subheading">{{edu.course}}</h4>
               </div>
               <div class="timeline-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamcommodo nibh ante facilisis.</p>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-inverted">
-            <div class="timeline-image">
-              <h4>2007 <br>
-                - <br>
-                2010 </h4>
-            </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>Design University</h4>
-                <h4 class="subheading">Bachelor Degree of Design</h4>
-              </div>
-              <div class="timeline-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamcommodo nibh ante facilisis.</p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="timeline-image">
-              <h4>2004 <br>
-                - <br>
-                2007 </h4>
-            </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>School Name</h4>
-                <h4 class="subheading">High School Degree</h4>
-              </div>
-              <div class="timeline-body">
-                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamcommodo nibh ante facilisis.</p>
+                <p>{{edu.description}}</p>
               </div>
             </div>
           </li>
@@ -460,8 +258,8 @@
       <div class="clearfix"></div>
     </div>
     <div class="col-md-8 col-md-offset-2">
-      <h3>Leave me a message</h3>
-      <div class="social">
+<!--       <h3>Leave me a message</h3>
+ -->      <div class="social">
         <ul>
           <li><a href="https://twitter.com/claudiainbytes" target="_blank"><i class="fa fa-twitter"></i></a></li>
           <li><a href="https://github.com/claudiainbytes" target="_blank"><i class="fa fa-github"></i></a></li>
@@ -480,7 +278,8 @@
     </div>
   </div>
 </div>
-<script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+
+<script type="text/javascript" src="js/jquery.1.12.4.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
 <script type="text/javascript" src="js/SmoothScroll.js"></script>
 <script type="text/javascript" src="js/easypiechart.js"></script>
@@ -489,7 +288,8 @@
 <script type="text/javascript" src="js/jquery.counterup.js"></script>
 <script type="text/javascript" src="js/waypoints.js"></script>
 <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
-<script type="text/javascript" src="js/contact_me.js"></script>
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

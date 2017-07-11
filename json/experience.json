@@ -1,0 +1,42 @@
+[
+  {
+    "company": "Seidor Colombia",
+    "position": "SSR PHP Developer",
+    "description": "MINTIC Territorial Platforms. Develop requirements under the ActionApps CMS architecture at the back end, and HTML, CSS, Javascript at the front end.",
+    "start": "JAN 2016",
+    "end": "FEB 2017",
+    "class": ""
+  },
+  {
+    "company": "Pontificia Universidad Javeriana",
+    "position": "PHP Laravel Junior Web Developer",
+    "description": "Requirement analysis, development and testing modules of the research information system application - as know as SIAP - with Laravel and Angular.JS.",
+    "start": "JUN 2015",
+    "end": "AGO 2015",
+    "class": "timeline-inverted"
+  },
+  {
+    "company": "Universidad Manuela Beltrán",
+    "position": "PHP Web Developer",
+    "description": "Develop and support PHP modules of the academic information system application AULANET.",
+    "start": "APR 2013",
+    "end": "JUL 2014",
+    "class": ""
+  },
+  {
+    "company": "LGL LatinMedios",
+    "position": "Web Developer",
+    "description": "Develop and support websites and projects for digital marketing campaigns using Codeigniter PHP Framework, HTML5 and jQuery.",
+    "start": "ENE 2012",
+    "end": "FEB 2013",
+    "class": "timeline-inverted"
+  },
+  {
+    "company": "Ennovva",
+    "position": "Junior Web Developer",
+    "description": "Develop and support websites, landing pages with PHP, jQuery and Drupal 6 y 7",
+    "start": "MAR 2011",
+    "end": "NOV 2011",
+    "class": ""
+  }
+]
