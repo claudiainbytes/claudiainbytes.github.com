@@ -71,9 +71,22 @@
     </div>
   </nav>
 </div>
+<!-- Favorite Quote -->
+<div id="quote" class="text-center">
+  <div class="container" ng-controller="MyquoteController">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+          <blockquote class="blockquote-reverse">
+            <p>{{quote.quote}}</p>
+            <footer><cite title="Source Title">{{quote.author}}</cite></footer>
+          </blockquote>
+      </div>
+    </div>
+  </div>
+</div>
 <!-- About Section -->
 <div id="about">
-  <div class="container">
+  <div class="container" ng-controller="MyprofileController"> 
     <div class="section-title text-center center">
       <h2>About Me</h2>
       <hr>
@@ -82,12 +95,10 @@
       <div class="col-md-12 text-center"><img src="img/about.jpg" class="img-responsive"></div>
       <div class="col-md-8 col-md-offset-2">
         <div class="about-text">
-          <blockquote class="blockquote-reverse">
-            <p>Since we cannot know all that there is to be known about anything, we ought to know a little about everything.</p>
-            <footer><cite title="Source Title">Blaise Pascal</cite></footer>
-          </blockquote>
-          <!-- p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare.</p-->
-          <p class="text-center"><a class="btn btn-primary" href="#"><i class="fa fa-download"></i> Download Resume</a></p>
+          <p>{{profile.summary_1}}</p>
+          <p>{{profile.summary_2}}</p>
+          <p ng-bind-html="profile.summary_3 | unsafe "></p>
+          <p class="text-center"><a class="btn btn-primary" ng-href="resumee/{{profile.resumee_en}}" target="_blank"><i class="fa fa-download"></i> Download Resume</a></p>
         </div>
       </div>
     </div>
@@ -95,7 +106,7 @@
 </div>
 <!-- Skills Section -->
 <div id="skills" class="text-center" loadcharts>
-  <div class="container" ng-controller="myskillsController">
+  <div class="container" ng-controller="MyskillsController">
     <div class="section-title center">
       <h2>Skills</h2>
       <hr>
@@ -111,7 +122,7 @@
 </div>
 <!-- Portfolio Section -->
 <div id="portfolio">
-  <div class="container" ng-controller="myprojectsController" loadportfolio>
+  <div class="container" ng-controller="MyprojectsController" loadportfolio>
     <div class="section-title text-center center">
       <h2>Portfolio</h2>
       <hr>
@@ -179,7 +190,7 @@
 </div>
 <!-- Resume Section -->
 <div id="resume" class="text-center">
-  <div class="container" ng-controller="myexperienceController">
+  <div class="container" ng-controller="MyexperienceController">
     <div class="section-title center">
       <h2>Experience</h2>
       <hr>
@@ -207,7 +218,7 @@
       </div>
     </div>
   </div>
-  <div class="container" ng-controller="myeducationController">
+  <div class="container" ng-controller="MyeducationController">
     <div class="section-title center">
       <h2>Education</h2>
       <hr>

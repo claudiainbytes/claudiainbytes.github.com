@@ -181,7 +181,28 @@ hr {
   -o-background-size: cover; }
 
 .section-title.center {
-  padding: 25px 0 45px 0; }
+  padding: 25px 0 25px 0; }
+
+/* Quote Section */
+#quote {
+  padding: 50px 0;
+  background: #cb54e6; }
+
+#quote h2 {
+  color: #fff; }
+
+#quote hr {
+  background: rgba(255, 255, 255, 0.3); }
+
+#quote .blockquote-reverse {
+  color: #fff;
+  font-size: 2rem; }
+
+#quote .blockquote-reverse cite {
+  color: rgba(255, 255, 255, 0.8); }
+
+#quote .blockquote-reverse footer {
+  color: rgba(255, 255, 255, 0.8); }
 
 /* About Section */
 #about {
@@ -189,7 +210,8 @@ hr {
   background: #f6f6f6; }
 
 #about .about-text {
-  margin-left: 10px; }
+  margin-left: 10px;
+  padding: 25px; }
 
 #about img {
   border-radius: 50%;
@@ -199,7 +221,17 @@ hr {
 
 #about p {
   margin-top: 20px;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 16px; }
+
+#about a.link {
+  color: #cb54e6;
+  text-decoration: underline; }
+
+#about a.link:hover {
+  color: #cb54e6;
+  text-decoration: underline; }
 
 /* Skills Section */
 #skills {

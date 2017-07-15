@@ -2,11 +2,14 @@
 
 'use strict';
 
+      var myquote = angular.module('myquote', []);
+      var myprofile = angular.module('myprofile', []);
       var myskills = angular.module('myskills', []);
       var myexperience = angular.module('myexperience', []);
       var myprojects = angular.module('myprojects', []);
       var myeducation = angular.module('myeducation', []);
-      var app = angular.module('app', ['myskills', 'myexperience', 'myeducation', 'myprojects']);
+
+      var app = angular.module('app', ['myquote', 'myprofile', 'myskills', 'myexperience', 'myeducation', 'myprojects']);
 
       app.directive('prettyp', function(){
             return function(scope, element, attrs){
@@ -71,28 +74,50 @@
             }
       });
 
-      myskills.controller('myskillsController', function($scope, $http){
+      app.filter('unsafe', function ($sce) {
+         return function (val) {
+            if( (typeof val == 'string' || val instanceof String) ) {
+               return $sce.trustAsHtml(val);
+            }
+         };
+      });
+
+      myquote.controller('MyquoteController', function($scope, $http){
+            $http.get('json/quote.json')
+                  .then(function(respuesta) {
+                        $scope.quote = respuesta.data;
+                  })
+      });
+
+      myprofile.controller('MyprofileController', function($scope, $http){
+            $http.get('json/profile.json')
+                  .then(function(respuesta) {
+                        $scope.profile = respuesta.data;
+                  })
+      });
+
+      myskills.controller('MyskillsController', function($scope, $http){
             $http.get('json/skills.json')
                   .then(function(respuesta) {
                         $scope.my_skills = respuesta.data;
                   })
       });
 
-      myexperience.controller('myexperienceController', function($scope, $http){
+      myexperience.controller('MyexperienceController', function($scope, $http){
             $http.get('json/experience.json')
                   .then(function(respuesta) {
                         $scope.my_experiences = respuesta.data;
                   })
       });
 
-      myeducation.controller('myeducationController', function($scope, $http){
+      myeducation.controller('MyeducationController', function($scope, $http){
             $http.get('json/education.json')
                   .then(function(respuesta) {
                         $scope.my_education = respuesta.data;
                   })
       });
 
-      myprojects.controller('myprojectsController', function($scope, $http){
+      myprojects.controller('MyprojectsController', function($scope, $http){
             $http.get('json/projects.json')
                   .then(function(respuesta) {
                         $scope.my_projects = respuesta.data;
