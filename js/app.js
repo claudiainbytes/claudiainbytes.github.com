@@ -14,8 +14,8 @@
       app.directive('prettyp', function(){
             return function(scope, element, attrs){
                   $("[rel^='prettyPhoto']").prettyPhoto({
-                        deeplinking: false, 
-                        social_tools:false 
+                        deeplinking: false,
+                        social_tools:false
                   });
             }
       })
@@ -28,49 +28,20 @@
                         var top = $('#skills').height()-$(window).scrollTop();
                         //console.log(top)
                         if(top < -300){
-                              if(index==0){     
-                              
+                              if(index==0){
+
                                     $('.chart').easyPieChart({
                                           easing: 'easeOutBounce',
                                           onStep: function(from, to, percent) {
                                                 $(this.el).find('.percent').text(Math.round(percent));
                                           }
                                     });
-                              
+
                                     }
                               index++;
                         }
                   })
             });
-            }
-      }).
-      directive('loadportfolio', function(){
-            return function(scope, element, attrs){
-                  $(document).load(function() {
-                        var $container = $('.portfolio-items');
-                        $container.isotope({
-                              filter: '*',
-                              animationOptions: {
-                              duration: 750,
-                              easing: 'linear',
-                              queue: false
-                              }
-                        });
-                        $('.cat a').click(function() {
-                        $('.cat .active').removeClass('active');
-                        $(this).addClass('active');
-                        var selector = $(this).attr('data-filter');
-                        $container.isotope({
-                              filter: selector,
-                              animationOptions: {
-                                duration: 750,
-                                easing: 'linear',
-                                queue: false
-                              }
-                        });
-                        return false;
-                  });
-                  });
             }
       });
 

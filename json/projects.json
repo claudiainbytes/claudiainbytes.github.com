@@ -1,92 +1,152 @@
 [
   {
     "title": "Campus Thao",
-    "description": "Campus Thao",
+    "short_desc": "Campus Thao",
     "img_large": "01-img-large.jpg",
-    "img_small": "01-img-small.jpg"
+    "img_small": "01-img-small.jpg",
+    "type": "others",
+    "video": "",
+    "gitpage": "",
+    "demourl": ""
   },
   {
     "title": "Sandwich Qbano",
-    "description": "Concurso Camila 2011",
+    "short_desc": "Concurso Camila 2011",
     "img_large": "02-img-large.jpg",
-    "img_small": "02-img-small.jpg"
+    "img_small": "02-img-small.jpg",
+    "type": "others",
+    "video": "",
+    "gitpage": "",
+    "demourl": ""
   },
   {
     "title": "RCN Chocolate Corona",
-    "description": "Concurso Buenos Momentos",
+    "short_desc": "Concurso Buenos Momentos",
     "img_large": "03-img-large.jpg",
-    "img_small": "03-img-small.jpg"
+    "img_small": "03-img-small.jpg",
+    "type": "others",
+    "video": "",
+    "gitpage": "",
+    "demourl": ""
   },
   {
     "title": "Daily Wells",
-    "description": "Daily Wells",
+    "short_desc": "Daily Wells",
     "img_large": "04-img-large.jpg",
-    "img_small": "04-img-small.jpg"
+    "img_small": "04-img-small.jpg",
+    "type": "others",
+    "video": "",
+    "gitpage": "",
+    "demourl": ""
   },
   {
     "title": "LatinMedios",
-    "description": "Feeder Dashboard",
+    "short_desc": "Feeder Dashboard",
     "img_large": "05-img-large.jpg",
-    "img_small": "05-img-small.jpg"
+    "img_small": "05-img-small.jpg",
+    "type": "others",
+    "video": "",
+    "gitpage": "",
+    "demourl": ""
   },
   {
     "title": "Ensus",
-    "description": "Web Site",
+    "short_desc": "Web Site",
     "img_large": "06-img-large.jpg",
-    "img_small": "06-img-small.jpg"
+    "img_small": "06-img-small.jpg",
+    "type": "others",
+    "video": "",
+    "gitpage": "",
+    "demourl": ""
   },
   {
     "title": "LG Copa América 2011",
-    "description": "Concurso Fútbol Sala",
+    "short_desc": "Concurso Fútbol Sala",
     "img_large": "07-img-large.jpg",
-    "img_small": "07-img-small.jpg"
+    "img_small": "07-img-small.jpg",
+    "type": "others",
+    "video": "",
+    "gitpage": "",
+    "demourl": ""
   },
   {
     "title": "Nissan",
-    "description": "Gallery",
+    "short_desc": "Gallery",
     "img_large": "08-img-large.jpg",
-    "img_small": "08-img-small.jpg"
+    "img_small": "08-img-small.jpg",
+    "type": "others",
+    "video": "",
+    "gitpage": "",
+    "demourl": ""
   },
   {
     "title": "Racom",
-    "description": "Web Maintenance",
+    "short_desc": "Web Maintenance",
     "img_large": "09-img-large.jpg",
-    "img_small": "09-img-small.jpg"
+    "img_small": "09-img-small.jpg",
+    "type": "others",
+    "video": "",
+    "gitpage": "",
+    "demourl": ""
   },
   {
     "title": "RCN, La Mega, La F.M.",
-    "description": "Web Maintenance",
+    "short_desc": "Web Maintenance",
     "img_large": "10-img-large.jpg",
-    "img_small": "10-img-small.jpg"
+    "img_small": "10-img-small.jpg",
+    "type": "others",
+    "video": "",
+    "gitpage": "",
+    "demourl": ""
   },
   {
     "title": "Sandwich Qbano",
-    "description": "Concurso Música en Altamar",
+    "short_desc": "Concurso Música en Altamar",
     "img_large": "11-img-large.jpg",
-    "img_small": "11-img-small.jpg"
+    "img_small": "11-img-small.jpg",
+    "type": "others",
+    "video": "",
+    "gitpage": "",
+    "demourl": ""
   },
   {
     "title": "Sweet Lemon",
-    "description": "Web Development",
+    "short_desc": "Web Development",
     "img_large": "12-img-large.jpg",
-    "img_small": "12-img-small.jpg"
+    "img_small": "12-img-small.jpg",
+    "type": "others",
+    "video": "",
+    "gitpage": "",
+    "demourl": ""
   },
   {
     "title": "Web de Cobbito",
-    "description": "Web Development",
+    "short_desc": "Web Development",
     "img_large": "13-img-large.jpg",
-    "img_small": "13-img-small.jpg"
+    "img_small": "13-img-small.jpg",
+    "type": "others",
+    "video": "",
+    "gitpage": "",
+    "demourl": ""
   },
   {
     "title": "Universidad Manuela Beltrán",
-    "description": "Web Development",
+    "short_desc": "Web Development",
     "img_large": "14-img-large.jpg",
-    "img_small": "14-img-small.jpg"
+    "img_small": "14-img-small.jpg",
+    "type": "others",
+    "video": "",
+    "gitpage": "",
+    "demourl": ""
   },
   {
     "title": "MINTIC Territorial Platforms",
-    "description": "Web Maintenance",
+    "short_desc": "Web Maintenance",
     "img_large": "15-img-large.jpg",
-    "img_small": "15-img-small.jpg"
+    "img_small": "15-img-small.jpg",
+    "type": "others",
+    "video": "",
+    "gitpage": "",
+    "demourl": ""
   }
 ]
