@@ -9,11 +9,11 @@
   },
   {
     "skill": "PHP",
-    "percentaje": 75
+    "percentaje": 70
   },
   {
-    "skill": "Drupal",
-    "percentaje": 60
+    "skill": "Drupal 6 & 7",
+    "percentaje": 50
   },
   {
     "skill": "Laravel",
@@ -21,6 +21,6 @@
   },
   {
     "skill": "Ruby",
-    "percentaje": 25
+    "percentaje": 20
   }
 ]

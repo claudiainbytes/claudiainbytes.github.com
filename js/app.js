@@ -92,7 +92,10 @@
             $http.get('json/projects.json')
                   .then(function(respuesta) {
                         $scope.my_projects = respuesta.data;
-                  })
+                  });
+            $scope.showProject = function (project) {
+                  $scope.curPrj = project;
+            };
       });
 
 }());

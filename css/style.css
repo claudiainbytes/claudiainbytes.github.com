@@ -80,7 +80,7 @@ hr {
 
 /* Navigation */
 #nav {
-  z-index: 9999; }
+  z-index: 4; }
 
 #nav.affix {
   position: fixed;
@@ -92,9 +92,9 @@ hr {
   background-color: #121d1f;
   border-radius: 0px;
   padding: 10px 0; }
-
 .navbar-custom .navbar-brand {
   font-weight: 600; }
+
 
 .navbar-custom .navbar-brand:focus {
   outline: 0; }
@@ -277,6 +277,16 @@ hr {
   content: '%';
   margin-left: 0.1em;
   font-size: .8em; }
+
+a.lnk-github {
+  color: rgba(255, 255, 255, 1);
+  transition: all 0.2s;
+}
+
+a.lnk-github:hover {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: line-through;
+}
 
 /* Portfolio Section */
 #portfolio {
@@ -496,7 +506,7 @@ ol.type li a:hover {
   border-left-width: 0; }
 
 .timeline > li .timeline-image {
-  z-index: 100;
+  z-index: 3;
   position: absolute;
   left: 0;
   width: 70px;
@@ -670,6 +680,66 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 
 #footer a:hover {
   color: #cb54e6; }
+
+/* Modal */
+.modal-desc {
+  margin: 10px 0;
+} 
+
+.modal-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+.modal-links li {
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-right: 1px solid #eaeaea;
+}
+
+.modal-links li:first-child { 
+  padding-left: 0px;
+}
+
+.modal-links li:last-child { 
+  border-right: none;
+}
+
+.modal-links li a {
+  display: block;
+  padding: 0;
+  font-size: 16px;
+  color: #656c6d;
+}
+
+.modal-links li a:hover {
+  color:  #cb54e6;
+}
+
+#myModal i.fa {
+  padding: 5px 10px 5px 5px;
+  color: #cb54e6;
+  font-size: 20px;
+}
+
+.modal-footer .btn-default {
+  color: #ffff;
+  background-color: #cb54e6;
+  border-color: #fff;
+  padding: 10px 20px;
+  margin: 0;
+  font-size: 16px;
+  border-radius: 0;
+}
+
+.modal-footer .btn-default:hover {
+  background-color: #000000;
+}
+
 
 /* Media Queries */
 @media (min-width: 768px) {

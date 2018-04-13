@@ -1,0 +1,1 @@
+http://bootstrapdocs.com/v3.3.4/docs/javascript/#modals
