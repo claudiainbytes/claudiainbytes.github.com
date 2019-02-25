@@ -99,7 +99,15 @@
           <p>{{profile.summary_1}}</p>
           <p>{{profile.summary_2}}</p>
           <p ng-bind-html="profile.summary_3 | unsafe "></p>
-          <p class="text-center"><a class="btn btn-primary" ng-href="resumee/{{profile.resumee_en}}" target="_blank"><i class="fa fa-download"></i> Download Resume</a></p>
+          <p class="text-center">
+              <a class="btn btn-primary" ng-href="resumee/{{profile.resumee_en}}" 
+                 target="_blank" href="resumee/claudiaestupinan_res_en.pdf" style="margin-bottom:10px;">
+                 <i class="fa fa-download"></i> Download Resume</a>
+              <br>
+              <a class="btn btn-primary" ng-href="resumee/{{profile.resumee_es}}" 
+                 target="_blank" href="resumee/claudiaestupinan_res_en.pdf">
+                 <i class="fa fa-download"></i> Hoja De Vida</a>
+          </p> 
         </div>
       </div>
     </div>
