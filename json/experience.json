@@ -1,5 +1,13 @@
 [
   {
+    "company": "The Superior Mayor of Bogotá, General Secretary",
+    "position": "Front End Web developer",
+    "description": "Drupal 8 front end developer making and supporting layouting of the new website of the city of Bogotá.",
+    "start": "AGU 2018",
+    "end": "DEC 2018",
+    "class": "timeline-inverted"
+  },
+  {
     "company": "Seidor Colombia",
     "position": "SSR PHP Developer",
     "description": "MINTIC Territorial Platforms. Develop requirements under the ActionApps CMS architecture at the back end, and HTML, CSS, Javascript at the front end.",
