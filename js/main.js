@@ -37,7 +37,7 @@ function main() {
     //Portfolio
     $(window).load(function() {
         var $container = $('.portfolio-items');
-        $container.isotope({
+        /*$container.isotope({
             filter: '*',
             animationOptions: {
                 duration: 750,
@@ -58,7 +58,7 @@ function main() {
                 }
             });
             return false;
-        });
+        });*/
 
     });
 
