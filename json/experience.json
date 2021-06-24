@@ -1,4 +1,11 @@
-[
+[ {
+  "company": "Geometry Global Colombia",
+  "position": "Front End Web developer",
+  "description": "Had experience building and supporting websites projects for digital marketing strategies based on core technologies like HTML5, CSS3, Javascript, PHP, MariaDB database, content management systems like Wordpress and Drupal (frontend side) and Laravel framework(fullstack).",
+  "start": "JUN 2019",
+  "end": "MAY 2021",
+  "class": "timeline-inverted"
+  }, 
   {
     "company": "The Superior Mayor of Bogotá, General Secretary",
     "position": "Front End Web developer",
