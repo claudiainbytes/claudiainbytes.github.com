@@ -1,26 +1,26 @@
 [
   {
     "skill": "HTML & CSS",
-    "percentaje": 80
+    "percentaje": 100
   },
   {
     "skill": "Javascript",
-    "percentaje": 70
+    "percentaje": 75
   },
   {
     "skill": "PHP",
-    "percentaje": 70
+    "percentaje": 80
   },
   {
-    "skill": "Drupal 6 & 7",
-    "percentaje": 50
+    "skill": "Drupal 8",
+    "percentaje": 60
   },
   {
     "skill": "Laravel",
-    "percentaje": 65
+    "percentaje": 100
   },
   {
-    "skill": "Ruby",
-    "percentaje": 20
+    "skill": "Wordpress",
+    "percentaje": 80
   }
 ]
