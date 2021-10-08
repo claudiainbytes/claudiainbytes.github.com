@@ -169,8 +169,8 @@
                 <img class="img-responsive" ng-src="img/portfolio/{{curPrj.img_large}}">
                 <p class="modal-desc">{{curPrj.description}}</p>
                 <ul class="modal-links">
-                  <li><a href="{{curPrj.gitpage}}" target="_blank"><i class="fa fa-github"></i><span>GitHub</span></a></li>
-                  <li><a href="{{curPrj.video}}" target="_blank"><i class="fa fa-youtube"></i><span>YouTube</span></a></li>
+                  <li ng-if="curPrj.gitpage"><a href="{{curPrj.gitpage}}" target="_blank"><i class="fa fa-github"></i><span>GitHub</span></a></li>
+                  <li ng-if="curPrj.video"><a href="{{curPrj.video}}" target="_blank"><i class="fa fa-youtube"></i><span>YouTube</span></a></li>
                   <li><a href="{{curPrj.demourl}}" target="_blank"><i class="fa fa-paper-plane"></i><span>Demo</span></a></li>
                 </ul>  
             </div>
@@ -273,7 +273,7 @@
            Colombia</p>
       </div>
       <div class="col-md-6"> <i class="fa fa-envelope-o fa-2x"></i>
-        <p>claudiaeforero@gmail.com</p>
+        <p>claudiaeforero@hotmail.com</p>
       </div>
       <div class="clearfix"></div>
     </div>
