@@ -1,4 +1,28 @@
-[
+[  
+  {
+    "id": 24,
+    "title": "The Fortune Cookie App",
+    "short_desc": "A digital deck of positive quotes.",
+    "img_large": "24-img-small.jpg",
+    "img_small": "24-img-large.jpg",
+    "type": "personal",
+    "video": "",
+    "gitpage": "https://github.com/claudiainbytes/fortune-cookies-app",
+    "demourl": "https://claudiainbytes.github.io/fortune-cookies-app/ ", 
+    "description":"A small project that shows random quotes based on React Redux JS."
+  },
+  {
+    "id": 23,
+    "title": "Placer Monticello",
+    "short_desc": "Frontend development in Drupal CMS",
+    "img_large": "23-img-small.jpg",
+    "img_small": "23-img-large.jpg",
+    "type": "personal",
+    "video": "",
+    "gitpage": "",
+    "demourl": "https://www.placermonticello.com/",
+    "description":"That project consist of making the look and feel of Pastas Monticello website based on Drupal CMS."
+  },
   {
     "id": 16,
     "title": "Palermo Cultural",
@@ -22,6 +46,18 @@
     "gitpage": "https://github.com/claudiainbytes/kamikaze-vs-bugs",
     "demourl": "https://claudiainbytes.github.io/kamikaze-vs-bugs/",
     "description":"The purpose of this project is customize a classic frogger arcade game according to the lessons that I learnt about Javascript Intermediate and Canvas 2D at Udacity Front-End Nanodegree Program."
+  },
+  {
+    "id": 22,
+    "title": "Colombia Weather Forecast",
+    "short_desc": "A weather forecast made in ReactJS",
+    "img_large": "22-img-large.jpg",
+    "img_small": "22-img-small.jpg",
+    "type": "personal",
+    "video": "",
+    "gitpage": "https://github.com/claudiainbytes/reactjsweatherforecast",
+    "demourl": "https://claudiainbytes.github.io/reactjsweatherforecast/",
+    "description":"The purpose of this project is create components that bring information about weather forecast in several cities of Colombia."
   },
   {
     "id": 18,
@@ -70,41 +106,5 @@
     "gitpage": "https://github.com/claudiainbytes/feedreader-jasmine-testing",
     "demourl": "https://claudiainbytes.github.io/palermo-neighborhood-map/src/",
     "description":"Given a web-based application that reads RSS feeds. How to use Jasmine to write a number of tests against a pre-existing application."
-  },
-  {
-    "id": 22,
-    "title": "Colombia Weather Forecast",
-    "short_desc": "A weather forecast made in ReactJS",
-    "img_large": "22-img-large.jpg",
-    "img_small": "22-img-small.jpg",
-    "type": "personal",
-    "video": "",
-    "gitpage": "https://github.com/claudiainbytes/reactjsweatherforecast",
-    "demourl": "https://claudiainbytes.github.io/reactjsweatherforecast/",
-    "description":"The purpose of this project is create components that bring information about weather forecast in several cities of Colombia."
-  },
-  {
-    "id": 23,
-    "title": "Placer Monticello",
-    "short_desc": "Frontend development in Drupal CMS",
-    "img_large": "23-img-small.jpg",
-    "img_small": "23-img-large.jpg",
-    "type": "personal",
-    "video": "",
-    "gitpage": "",
-    "demourl": "https://www.placermonticello.com/",
-    "description":"That project consist of making the look and feel of Pastas Monticello website based on Drupal CMS."
-  },
-  {
-    "id": 24,
-    "title": "The Fortune Cookie App",
-    "short_desc": "A digital deck of positive quotes.",
-    "img_large": "24-img-small.jpg",
-    "img_small": "24-img-large.jpg",
-    "type": "personal",
-    "video": "",
-    "gitpage": "https://github.com/claudiainbytes/fortune-cookies-app",
-    "demourl": "https://claudiainbytes.github.io/fortune-cookies-app/ ", 
-    "description":"A small project that shows random quotes based on React Redux JS."
   }
 ]
